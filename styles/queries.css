@@ -1,0 +1,64 @@
+@media (max-width: 59em) {
+  html {
+    font-size: 50.5%;
+  }
+}
+@media (max-width: 50em) {
+  .note-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .btn-save {
+    margin-bottom: 1.2rem;
+  }
+  .modul {
+    width: 75%;
+    left: 14%;
+    font-size: 1.6rem;
+  }
+  .alert-modul {
+    left: 10%;
+    width: 80%;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 34em) {
+  .header {
+    font-size: 1.2rem;
+  }
+  .header-icon {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+  .modul {
+    width: 95%;
+    left: 2.5%;
+    top: 5%;
+    font-size: 1.8rem;
+  }
+  .alert-modul {
+    left: 10%;
+    width: 80%;
+  }
+  .warning-text {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 25em) {
+  html {
+    font-size: 44.5%;
+  }
+  .modul {
+    top: 2%;
+    font-size: 2rem;
+  }
+  .row {
+    gap: 3.2rem;
+  }
+  .btn-save,
+  .delete-all-notes {
+    font-size: 1.4rem;
+    padding: 0.8rem 1.6rem;
+  }
+}

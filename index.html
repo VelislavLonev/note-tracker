@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note taker &mdash; Never forget again</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Lato:wght@400;700&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="https://unpkg.com/phosphor-icons"></script>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/queries.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <h1>
+          Note Taker
+          <ion-icon class="header-icon" name="pencil-outline"></ion-icon>
+        </h1>
+      </header>
+      <main>
+        <section class="section-container">
+          <div class="note-grid">
+            <div class="note-files">
+              <ul class="note-list"></ul>
+            </div>
+            <div class="note-text">
+              <div class="row">
+                <button class="btn-save"><span>&larr;</span>Save Note</button>
+                <button class="delete-all-notes">Remove All</button>
+              </div>
+
+              <textarea name="textarea" class="text-area"></textarea>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <article class="modul hidden">
+      <button class="btn-close">
+        <ion-icon name="close-circle-outline"></ion-icon>
+      </button>
+    </article>
+    <div class="alert-modul hidden">
+      <p class="warning-text">
+        Warning! Pressing <strong>'continue'</strong> will delete all of you'r
+        Notes, press <strong>'cancel'</strong> if you want to abort this
+        operation.
+      </p>
+      <div class="row">
+        <button class="warning-btn warning-btn--delete">continie</button>
+        <button class="warning-btn warning-btn--cancel">cancel</button>
+      </div>
+    </div>
+  </body>
+</html>
