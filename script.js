@@ -126,7 +126,7 @@ deleteAllNotes.addEventListener('click', function (e) {
       app.classList.remove('blur');
       app.classList.remove('off-events');
       localStorage.clear();
-      location.reload();
+      window.location = './index.html';
     }
   });
 });
