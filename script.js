@@ -47,7 +47,6 @@ function renderNoteElements(notes) {
       </li>`;
 
     list.insertAdjacentHTML('beforeend', html);
-    numberNote++;
   });
 }
 function removeHidden() {
@@ -95,6 +94,7 @@ nodeFiles.addEventListener('click', function (e) {
         notes.splice(index, 1);
         renderNoteElements(notes);
         localStorage.setItem('Notes', JSON.stringify(notes));
+        numberNote--;
       }
     });
   }
@@ -148,6 +148,7 @@ document.addEventListener(
   'DOMContentLoaded',
   function () {
     renderNoteElements(notes);
+    numberNote = notes.length + 1;
   },
   false
 );
